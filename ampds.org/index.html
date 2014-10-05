@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+    <title>AMPds by Stephen Makonin</title>
+    <meta name="description" content="AMPds: The Almanac of Minutely Power Dataset (including water and natural gas consumption). A public dataset for load disaggregation and eco-feedback research." />
+    <meta name="author" content="Stephen Makonin" />
+    <meta name="copyright" content="2013, 2014 Stephen Makonin" />
+    <meta http-equiv="Content-Language" content="en-ca" />
+    <link rel="shortcut icon" href="http://ampds.org/favicon.ico" type="image/x-icon" />
+    <style>
+        @import url(style/font.css);
+        @import url(style/style.css);
+    </style>
+    <script type="text/javascript">
+        function enableDisable(el) 
+        {
+            var links = document.getElementsByTagName('button');            
+            for(var i = 0; i< links.length; i++)
+                links[i].disabled = !el.checked
+        } 
+    </script>
+</head>
+<body>
+    <div id="body">
+        <h1><img src="images/leaf.png" id="logo" alt="Stephen Makonin">AMPds 2</h1>
+        <h2>The Almanac of Minutely Power Dataset - 2 Years<br/>
+        (a dataset consisting of electricity, water, and natural gas consumption)</h2>
+        
+        <p style="margin-top:3em;">
+        <b>The AMPds dataset</b> has been release to help <a href="http://nilm.ca">load disaggregation/NILM</a> and eco-feedback researcher test their algorithms, models, systems, and prototypes. This dataset is intended to be multi-year capture of the consumption of my house. 
+        This dataset contains electricity, water, and natural gas measurements at one minute intervals. A total of 1,051,200 readings for 2 years of monitoring. Additionally, this new version has been fixed so that there are not missing readings and the <a href="https://github.com/nilmtk/nilmtk/issues/32">water meter pulse reset problem</a>.</p>
+
+        <p>More details about the house, meters uses, measurements taken, and how to get access to the dataset are described below (on this webpage) and in my <a href="EPEC_2013">research paper</a> (the below citation information).
+        </p>
+        
+        <blockquote class="#p">
+        Stephen Makonin, Fred Popowich, Lyn Bartram, Bob Gill, and Ivan V. Bajic, "AMPds: A Public Dataset for Load Disaggregation and Eco-Feedback Research," in <em>Electrical Power and Energy Conference (EPEC), 2013 IEEE</em>, 2013. 
+        &nbsp;&nbsp;<a href="EPEC_2013.pdf"><img src="images/file_pdf.png"></a>&nbsp;&nbsp;<a href="EPEC_2013.bib"><img src="images/file_bib.png"></a>
+        </blockquote>
+        
+        <h2>Dataset Access</h2>
+        <p>
+        For access to download AMPds, you will need a username/password. Please send us an email
+        <script type="text/javascript">var href_opener = '(<a href="';var third = 'to:';var second = 'il';var first = 'ma';var otliam = href_opener + first + second + third;var href_closer = "<\/a>)";function scramble_addr_addr(add, dom, serv, emailtext) {document.write(otliam);document.write(add);document.write('@');document.write(serv + '.' + dom);document.write('">');if (emailtext == '') {document.write(add);document.write('@');document.write(serv + '.' + dom);} else {document.write(emailtext);}document.write(href_closer);}scramble_addr_addr('stephen', 'com', 'makonin', '');</script>      
+        from your institution email account that states your affiliation and I will send you the username/password.
+        By downloading AMPds you agree to the following Terms of Use.
+        </p>
+        
+        <p>
+        <table class='sample'>
+            <tr>
+                <th>Terms of Use</th>
+            </tr>
+            <tr>
+                <td>
+                Using AMPds requires you to cite my <a href="EPEC_2013">research paper</a> (citation information above or use <a href="EPEC_2013.bib">bibtex file</a>) in your publications or presentations. I request that if you use AMPds in your publication that you provide me a copy of the publication. I request that you do not pass the username and password to access AMPds or AMPds files/archive to other researchers; they need to make a direct request to me. You cannot use AMPds for commercial reasons without express written agreement from myself. The granting of commercial use requires the purchase of a licence to do so. You agree that I make no warranties about AMPds, and disclaim liability for all uses of AMPds, to the fullest extent permitted by applicable law. When using or citing AMPds, you should not imply endorsement by me. I reserve the right, in my sole discretion, not to grant access to AMPds to specific requests for access. Although rare, such refusals may occur due to situations that pose a conflict of interest, for example. I also reserve the right, in my sole discretion, to change this Terms of Use Agreement at any time without prior notice.
+                <center><br/><b>
+                <input type="checkbox" name="IAgree" value="0" onclick="enableDisable(this);" /> I agree to the above Terms of Use.
+                </b><br/><br/>
+
+                <a href="download.html"><button disabled>Download AMPds.zip (350MB)</button></a>
+                <br/><br/>
+
+                </center>
+                </td>
+            </tr>
+        </table>
+        </p>
+        
+        <h2>The House</h2>
+        <p>
+        We monitored a house built in 1955 in the greater Vancouver region in British Columbia (Canada), which underwent major renovations in 2005 and 2006-receiving a Canadian Government EnerGuide rating of 82%.
+        </p>
+
+        <p>
+        <table class='sample'>
+            <tr><th colspan='5'>Electricity Sub-Metering</th></tr>
+            <tr><th>ID</th><th>Description</th><th>Voltage</th><th>Breaker Type</th></tr>
+            <tr><td>WHE</td><td>Whole-House Meter</td><td>240V</td><td>200A Double-Pole</td></tr>
+            <tr><td>B1E</td><td>North Bedroom</td><td>120V</td><td>15A Single-Pole</td></tr>
+            <tr><td>B2E</td><td>Master and South Bedroom</td><td>120V</td><td>15A Single-Pole</td></tr>
+            <tr><td>BME</td><td>Basement Plugs and Lights</td><td>120V</td><td>15A Single-Pole</td></tr>
+            <tr><td>CDE</td><td>Clothes Dryer</td><td>240V</td><td>30A Double-Pole</td></tr>
+            <tr><td>CWE</td><td>Clothes Washer</td><td>120V</td><td>15A Single-Pole</td></tr>
+            <tr><td>DNE</td><td>Dining Room Plugs</td><td>120V</td><td>15A Single-Pole</td></tr>
+            <tr><td>DWE</td><td>Dishwasher</td><td>120V</td><td>15A Single-Pole</td></tr>
+            <tr><td>EBE</td><td>Electronics Workbench</td><td>120V</td><td>15A Single-Pole</td></tr>
+            <tr><td>EQE</td><td>Security/Network Equipment</td><td>120V</td><td>15A Single-Pole</td></tr>
+            <tr><td>FGE</td><td>Kitchen Fridge</td><td>120V</td><td>15A Single-Pole</td></tr>
+            <tr><td>FRE</td><td>Forced Air Furnace: Fan and Thermostat</td><td>120V</td><td>15A Single-Pole</td></tr>
+            <tr><td>GRE</td><td>Garage</td><td>240V</td><td>60A Double-Pole</td></tr>
+            <tr><td>HPE</td><td>Heat Pump</td><td>240V</td><td>40A Double-Pole</td></tr>
+            <tr><td>HTE</td><td>Instant Hot Water Unit</td><td>120V</td><td>15A Single-Pole</td></tr>
+            <tr><td>OFE</td><td>Home Office</td><td>120V</td><td>15A Single-Pole</td></tr>
+            <tr><td>OUE</td><td>Outside Plug</td><td>120V</td><td>15A Single-Pole</td></tr>
+            <tr><td>RSE</td><td>Rental Suite Sub-Panel</td><td>240V</td><td>100A Double-Pole</td></tr>
+            <tr><td>TVE</td><td>Entertainment: TV, PVR, AMP</td><td>120V</td><td>15A Single-Pole</td></tr>
+            <tr><td>UTE</td><td>Utility Room Plug</td><td>120V</td><td>15A Single-Pole</td></tr>
+            <tr><td>WOE</td><td>Wall Oven</td><td>240V</td><td>30A Double-Pole</td></tr>
+            <tr><td>UNE</td><td>Unmetered Loads Soft-Meter</td><td colspan='2'>n/a</td></tr>
+            
+            <tr><th colspan='5'>Natural Gas Sub-Metering</th><tr>
+            <tr><td>WHG</td><td>Whole-House Meter</td><td colspan='2'>n/a</td></tr>
+            <tr><td>FRG</td><td>HVAC/Furnace Fan Heating</td><td colspan='2'>n/a</td></tr>
+            
+            <tr><th colspan='5'>Water Sub-Metering</th><tr>
+            <tr><td>WHW</td><td>Whole-House Meter</td><td colspan='2'>n/a</td></tr>
+            <tr><td>HTW</td><td>Instant Hot Water Unit</td><td colspan='2'>n/a</td></tr>
+        </table>
+        </p>
+        
+        <p>
+        Electricity measurements are taken by 2 DENT PowerScout 18 units metering 24 loads at the electrical circuit breaker panel. Measurements are read over a RS-485/Modbus communication link by data acquisition equipment. Natural gas measurements are taken by an Elster AC250 gas meter and a Elster BK-G4 gas meter; both send pulses to the data acquisition equipment. Water measurements are taken by 2 Elster/Kent V100 water meters, which also send pulses to the data acquisition equipment.
+        </p>
+        
+        <p>
+        <table class='sample'>
+            <tr><th colspan='4'>Electricity Measurements</th></tr>
+            <tr><th>Description</th><th>Units</th> <th>Description</th><th>Units</th></tr>
+            <tr><td>Voltage ( V )</td><td>V</td> <td>Current ( I )</td><td>A</td></tr>
+            <tr><td>Real Power ( P )</td><td>W</td> <td>Real Energy ( Pt )</td><td>Wh</td></tr>
+            <tr><td>Reactive Power ( Q )</td><td>VAR</td> <td>Reactive Energy ( Qt )</td><td>VARh</td></tr>
+            <tr><td>Apparent Power ( S )</td><td>VA</td> <td>Apparent Energy ( St )</td><td>VAh</td></tr>
+            <tr><td>Displacement Power Factor ( DPF )</td><td><em>ratio</em></td> <td>Apparent Power Factor ( APF )</td><td><em>ratio</em></td></tr>
+            <tr><td>Frequency (<em> f </em>)</td><td>Hz</td> <td></td><td></td></tr>
+                        
+            <tr><th colspan='2'>Natural Gas Measurements</th> <th colspan='2'>Water Measurements</th><tr>
+            <tr><th>Description</th><th>Units</th> <th>Description</th><th>Units</th></tr>
+            <tr><td>Pulse Counter</td><td>dm<sup>3</sup></td> <td>Pulse Counter</td><td>L</td></tr>
+            <tr><td>Average Rate</td><td>dm<sup>3</sup>/h</td> <td>Average Rate</td><td>L/min</td></tr>
+            <tr><td>Instantaneous Rate</td><td>dm<sup>3</sup>/h</td> <td>Instantaneous Rate</td><td>L/min</td></tr>
+        </table>
+        </p>
+        
+        <h2>FAQ - Frequently Asked Questions</h2>
+        <h3>How are timestamps used?</h3>
+        <p>
+        All data file rows begin with the timestamp integer value of <b>1333263600</b>. The house used in AMPds is in the <em>America/Vancouver</em> timezone. So the timestamp 1333263600 is equivalent to <b>April 01, 2012 12:00:00 AM (local time)</b> or <b>Apr 01, 2012 07:00:00 (GMT or UTC)</b>.
+        </p>
+
+        <h3>Where can I get weather data?</h3>
+        <p>
+        Historical weather data for this house can be downloaded from the Canada Wether Office's National Climate Data and Information Archive found <a href="http://www.climate.weatheroffice.gc.ca/climateData/dailydata_e.html?StationID=889">here</a>.
+        </p>
+
+        <h3>Do you have more details about the HVAC system?</h3>
+        <p>
+        The house HVAC setup is often called a duel-fuel system, using forced air. Natural gas is used, but only when it is too cold. At about 2&deg;C (or 35.5&deg;F) there would be a change over from electric heating from the heat pump to gas heating from the central furnace. At that temperature there is not heat that the heat pump can give, it is a stain on the compressor. The FRG meter will have data for the furnace using gas. HPE is the breaker for the heat pump. FRE is the breaker for he furnace fan and thermostat. The gas furnace (where the fan is) is a 2-stage, variable speed fan forced air and is rated at 94% efficient.. The heat pump has a 2-stage compressor and is rated at 17 SEER. The heat pump is there central unit for air conditioning, there are not other air conditioning units in the house (besides the windows).
+        </p>
+
+        <h3>What appliances use natural gas?</h3>
+        <p>
+        Appliance that use natural gas in my house are: the furnace (FRG), the instant hot water unit, the cooking stove (not oven), and the fireplace (rarely used).
+        </p>
+        
+       <footer>
+            <span id="imgstrip">
+                Copyright &copy; 2013, 2014 <a href="http://makonin.com">Stephen Makonin</a>. All Rights Reserved.
+                <br/>
+                <br/>
+            </span>
+        </footer>
+    </div>
+</body>
+</html>

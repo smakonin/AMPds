@@ -1,0 +1,33 @@
+AMPds: Almanac of Minutely Power dataset
+========================================
+
+Copyright (C) 2013, 2014 Stephen Makonin. All Rights Reserved.
+
+For the latest version and/or more information go to: http://ampds.org
+
+
+AMPds: Terms of Use
+===================
+
+Dear user,
+
+Using AMPds requires you to cite my research paper (see file please_cite.bib) 
+in your publications or presentations. I request that if you use AMPds in your 
+publication that you provide me a copy of the publication. I request that you 
+do not pass the username and password to access AMPds or AMPds files/archive to
+other researchers; they need to make a direct request to me. You cannot use 
+AMPds for commercial reasons without express written agreement from myself. The
+granting of commercial use requires the purchase of a licence to do so. You 
+agree that I make no warranties about AMPds, and disclaim liability for all 
+uses of AMPds, to the fullest extent permitted by applicable law. When using or
+citing AMPds, you should not imply endorsement by me. I reserve the right, in 
+my sole discretion, not to grant access to AMPds to specific requests for 
+access. Although rare, such refusals may occur due to situations that pose a 
+conflict of interest, for example. I also reserve the right, in my sole 
+discretion, to change this Terms of Use Agreement at any time without prior 
+notice. By using AMPds, you agree to these terms.
+
+Best regards,
+Stephen Makonin.
+
+AMPds is Copyright (C) 2013, 2014 Stephen Makonin. All Rights Reserved.
