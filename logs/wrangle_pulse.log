@@ -1,0 +1,154 @@
+Timezone set to: ('PST', 'PDT')
+
+Start wrangling Water meter WHW with /minute rates and 1051200 reading(s)...
+	Begining PASS 1 cleanup...
+	Loading file: ./dump.R2/WHW.csv
+	IGNORE: unix timestamp 1336152780 has multiple entries! ['1336178026', '2012-05-04 17:33:46', '57467.656', '0', '0']
+	IGNORE: unix timestamp 1344790260 has multiple entries! ['1344815490', '2012-08-12 16:51:30', '36100.5', '0', '0']
+
+	Begining PASS 2 cleanup...
+	FIXING: avg_rate rounding/missmatch error of 0.001 ! [1337966280, 66150.447, 3.785, 0.0]
+	FIXING: missing readings from [1342189680, 85416.097, 0.0, 0.0] to [1342190160, 85419.882, 0.0, 0.0] a gap of 7
+	FIXING: missing readings from [1342287780, 86210.947, 0.0, 0.0] to [1342310580, 11388.5, 0.0, 0.0] a gap of 379
+	FIXING: counter reset! [1342287780, 86210.947, 0.0, 0.0] [1342310580, 11388.5, 0.0, 0.0]
+	FIXING: avg_rate rounding/missmatch error of 0.5 ! [1344790320, 110923.0, 0.0, 0.0]
+	FIXING: missing readings from [1350782340, 165888.5, 0.0, 0.0] to [1350782760, 165889.5, 0.0, 0.0] a gap of 6
+	FIXING: missing readings from [1356894900, 220702.0, 0.0, 0.0] to [1356895380, 220702.5, 0.0, 0.0] a gap of 7
+	FIXING: missing readings from [1362906000, 279786.0, 0.0, 0.0] to [1362906540, 279786.5, 0.0, 0.0] a gap of 8
+	FIXING: avg_rate rounding/missmatch error of 0.182 ! [1367595960, 327331.0, 0.682, 0.0]
+	FIXING: missing readings from [1373809080, 393683.5, 1.5, 8.571] to [1373809620, 393684.0, 0.0, 0.0] a gap of 8
+	FIXING: missing readings from [1380159360, 449060.0, 0.0, 0.0] to [1380159840, 449060.5, 0.0, 0.0] a gap of 7
+	FIXING: missing readings from [1386489180, 503967.5, 0.0, 0.0] to [1386489300, 503967.5, 0.0, 0.0] a gap of 1
+	FIXING: missing readings from [1386493500, 503976.0, 0.0, 0.0] to [1386493620, 503977.0, 0.541, 0.0] a gap of 1
+	FIXING: avg_rate rounding/missmatch error of 0.541 ! [1386493620, 503977.0, 0.541, 0.0]
+	FIXING: avg_rate rounding/missmatch error of 0.2 ! [1386493920, 503979.5, 0.8, 0.0]
+	FIXING: missing readings from [1386493920, 503979.5, 1.0, 0.0] to [1386494040, 503980.0, 0.283, 0.0] a gap of 1
+	FIXING: avg_rate rounding/missmatch error of 0.283 ! [1386494040, 503980.0, 0.283, 0.0]
+	FIXING: missing readings from [1386500100, 503980.0, 0.0, 0.0] to [1386500460, 503980.5, 0.0, 0.0] a gap of 5
+	FIXING: missing readings from [1392858240, 559489.5, 0.0, 0.0] to [1392858720, 559490.0, 0.0, 0.0] a gap of 7
+
+	Save wrangled dataset file: /Users/stephen/Desktop/public/Water_WHW.csv
+
+	ISSUE TALLIES:
+
+	multiple same unix_ts            =     2
+	avg_rate rounding/mismatch       =     6
+	missing unix_ts                  =   437
+	counter reset                    =     1
+
+
+Start wrangling Water meter HTW with /minute rates and 1051200 reading(s)...
+	Begining PASS 1 cleanup...
+	Loading file: ./dump.R2/HTW.csv
+	IGNORE: unix timestamp 1336152780 has multiple entries! ['1336178026', '2012-05-04 17:33:46', '54927.921', '0', '0']
+	IGNORE: unix timestamp 1344790260 has multiple entries! ['1344815490', '2012-08-12 16:51:30', '19576', '0', '0']
+
+	Begining PASS 2 cleanup...
+	FIXING: avg_rate rounding/missmatch error of 0.001 ! [1338775320, 66150.447, 3.785, 0.0]
+	FIXING: missing readings from [1342189680, 78705.292, 0.0, 0.0] to [1342190160, 78709.077, 0.0, 0.0] a gap of 7
+	FIXING: missing readings from [1342287780, 79053.512, 0.0, 0.0] to [1342310580, 10443.0, 0.0, 0.0] a gap of 379
+	FIXING: counter reset! [1342287780, 79053.512, 0.0, 0.0] [1342310580, 10443.0, 0.0, 0.0]
+	FIXING: avg_rate rounding/missmatch error of 0.5 ! [1344790320, 88187.0, 0.0, 0.0]
+	FIXING: missing readings from [1350782340, 111606.0, 0.0, 0.0] to [1350782760, 111606.5, 0.0, 0.0] a gap of 6
+	FIXING: missing readings from [1356894900, 138444.5, 0.0, 0.0] to [1356895380, 138445.0, 0.0, 0.0] a gap of 7
+	FIXING: missing readings from [1362906000, 168785.5, 0.0, 0.0] to [1362906540, 168786.0, 0.0, 0.0] a gap of 8
+	FIXING: avg_rate rounding/missmatch error of 0.5 ! [1367595900, 192014.0, 0.0, 0.0]
+	FIXING: missing readings from [1373809080, 219021.0, 0.0, 0.0] to [1373809620, 219021.0, 0.0, 0.0] a gap of 8
+	FIXING: missing readings from [1380159360, 239273.5, 0.0, 0.0] to [1380159840, 239274.0, 0.0, 0.0] a gap of 7
+	FIXING: missing readings from [1386489180, 264223.5, 0.0, 0.0] to [1386489300, 264223.5, 0.0, 0.0] a gap of 1
+	FIXING: missing readings from [1386493500, 264225.5, 0.0, 0.0] to [1386493620, 264225.5, 0.0, 0.0] a gap of 1
+	FIXING: avg_rate rounding/missmatch error of 0.2 ! [1386493920, 264227.0, 0.8, 0.0]
+	FIXING: missing readings from [1386493920, 264227.0, 1.0, 0.0] to [1386494040, 264227.5, 0.283, 0.0] a gap of 1
+	FIXING: avg_rate rounding/missmatch error of 0.283 ! [1386494040, 264227.5, 0.283, 0.0]
+	FIXING: missing readings from [1386500100, 264227.5, 0.0, 0.0] to [1386500460, 264228.0, 0.0, 0.0] a gap of 5
+	FIXING: missing readings from [1392858240, 290846.5, 0.0, 0.0] to [1392858720, 290847.0, 0.0, 0.0] a gap of 7
+
+	Save wrangled dataset file: /Users/stephen/Desktop/public/Water_HTW.csv
+
+	ISSUE TALLIES:
+
+	multiple same unix_ts            =     2
+	avg_rate rounding/mismatch       =     5
+	missing unix_ts                  =   437
+	counter reset                    =     1
+
+
+Start wrangling NaturalGas meter WHG with /hour rates and 1051200 reading(s)...
+	Begining PASS 1 cleanup...
+	Loading file: ./dump.R2/WHG.csv
+	IGNORE: unix timestamp 1336152780 has multiple entries! ['1336178026', '2012-05-04 17:33:46', '627125', '0', '0']
+	IGNORE: unix timestamp 1344790260 has multiple entries! ['1344815490', '2012-08-12 16:51:30', '799375', '0', '0']
+
+	Begining PASS 2 cleanup...
+	FIXING: avg_rate rounding/missmatch error of 1500.0 ! [1336152840, 627125.0, 0.0, 0.0]
+	FIXING: missing readings from [1342189680, 752675.0, 0.0, 0.0] to [1342190160, 752700.0, 0.0, 0.0] a gap of 7
+	FIXING: missing readings from [1342287780, 754525.0, 0.0, 0.0] to [1342310580, 754550.0, 0.0, 0.0] a gap of 379
+	FIXING: avg_rate rounding/missmatch error of 1500.0 ! [1344790320, 799375.0, 0.0, 0.0]
+	FIXING: missing readings from [1350782340, 918400.0, 0.0, 0.0] to [1350782760, 918450.0, 0.0, 0.0] a gap of 6
+	FIXING: missing readings from [1356894900, 1193725.0, 0.0, 0.0] to [1356895380, 1193750.0, 0.0, 0.0] a gap of 7
+	FIXING: missing readings from [1362906000, 1601200.0, 0.0, 0.0] to [1362906540, 1601225.0, 0.0, 0.0] a gap of 8
+	FIXING: avg_rate rounding/missmatch error of 1500.0 ! [1367596140, 1769825.0, 0.0, 0.0]
+	FIXING: avg_rate rounding/missmatch error of 3000.0 ! [1367596320, 1769875.0, 0.0, 0.0]
+	FIXING: missing readings from [1373809080, 1911975.0, 0.0, 0.0] to [1373809620, 1912000.0, 0.0, 0.0] a gap of 8
+	FIXING: avg_rate rounding/missmatch error of 24.59 ! [1380157620, 2007000.0, 1475.41, 0.0]
+	FIXING: missing readings from [1380159360, 2007075.0, 0.0, 0.0] to [1380159840, 2007100.0, 0.0, 0.0] a gap of 7
+	FIXING: missing readings from [1386489180, 2310375.0, 0.0, 0.0] to [1386489300, 2310375.0, 0.0, 0.0] a gap of 1
+	FIXING: avg_rate rounding/missmatch error of 156.72 ! [1386492720, 2310825.0, 1343.28, 0.0]
+	FIXING: missing readings from [1386493500, 2310875.0, 0.0, 0.0] to [1386493620, 2310875.0, 0.0, 0.0] a gap of 1
+	FIXING: avg_rate rounding/missmatch error of 300.0 ! [1386493920, 2310900.0, 1200.0, 0.0]
+	FIXING: missing readings from [1386493920, 2310900.0, 1500.0, 0.0] to [1386494040, 2310900.0, 0.0, 0.0] a gap of 1
+	FIXING: avg_rate rounding/missmatch error of 24.59 ! [1386495480, 2310925.0, 1475.41, 0.0]
+	FIXING: avg_rate rounding/missmatch error of 25.42 ! [1386497340, 2311400.0, 1525.42, 0.0]
+	FIXING: missing readings from [1386500100, 2311525.0, 0.0, 0.0] to [1386500460, 2311575.0, 0.0, 0.0] a gap of 5
+	FIXING: missing readings from [1392858240, 2807425.0, 0.0, 0.0] to [1392858720, 2807450.0, 0.0, 0.0] a gap of 7
+
+	Save wrangled dataset file: /Users/stephen/Desktop/public/NaturalGas_WHG.csv
+
+	ISSUE TALLIES:
+
+	multiple same unix_ts            =     2
+	avg_rate rounding/mismatch       =     9
+	missing unix_ts                  =   437
+	counter reset                    =     0
+
+
+Start wrangling NaturalGas meter FRG with /hour rates and 1051200 reading(s)...
+	Begining PASS 1 cleanup...
+	Loading file: ./dump.R2/FRG.csv
+	IGNORE: unix timestamp 1336152780 has multiple entries! ['1336178026', '2012-05-04 17:33:46', '295279.248', '0', '0']
+	IGNORE: unix timestamp 1344790260 has multiple entries! ['1344815490', '2012-08-12 16:51:30', '295279.248', '0', '0']
+
+	Begining PASS 2 cleanup...
+	FIXING: missing readings from [1342189680, 295279.248, 0.0, 0.0] to [1342190160, 295279.248, 0.0, 0.0] a gap of 7
+	FIXING: missing readings from [1342287780, 295279.248, 0.0, 0.0] to [1342310580, 295279.248, 0.0, 0.0] a gap of 379
+	FIXING: missing readings from [1350782340, 295958.832, 0.0, 0.0] to [1350782760, 295958.832, 0.0, 0.0] a gap of 6
+	FIXING: missing readings from [1356894900, 410582.0, 0.0, 0.0] to [1356895380, 410582.0, 0.0, 0.0] a gap of 7
+	FIXING: missing readings from [1362906000, 628077.196, 0.0, 0.0] to [1362906540, 628077.196, 0.0, 0.0] a gap of 8
+	FIXING: avg_rate rounding/missmatch error of 1698.96 ! [1367595900, 659309.744, 0.0, 0.0]
+	FIXING: avg_rate rounding/missmatch error of 1698.96 ! [1367596140, 659338.06, 0.0, 0.0]
+	FIXING: avg_rate rounding/missmatch error of 3397.92 ! [1367596320, 659394.692, 0.0, 0.0]
+	FIXING: missing readings from [1373809080, 659394.692, 0.0, 0.0] to [1373809620, 659423.008, 0.0, 0.0] a gap of 8
+	FIXING: missing readings from [1380159360, 659423.008, 0.0, 0.0] to [1380159840, 659451.324, 0.0, 0.0] a gap of 7
+	FIXING: missing readings from [1386489180, 752979.072, 0.0, 0.0] to [1386489300, 752979.072, 0.0, 0.0] a gap of 1
+	FIXING: avg_rate rounding/missmatch error of 224.39 ! [1386492780, 753375.496, 1923.35, 0.0]
+	FIXING: missing readings from [1386493500, 753403.812, 0.0, 0.0] to [1386493620, 753403.812, 0.0, 0.0] a gap of 1
+	FIXING: missing readings from [1386493920, 753403.812, 0.0, 0.0] to [1386494040, 753403.812, 0.0, 0.0] a gap of 1
+	FIXING: avg_rate rounding/missmatch error of 28.8 ! [1386497340, 753885.184, 1727.76, 0.0]
+	FIXING: missing readings from [1386500100, 753970.132, 0.0, 0.0] to [1386500460, 753998.448, 0.0, 0.0] a gap of 5
+	FIXING: avg_rate rounding/missmatch error of 0.06 ! [1391409720, 927887.003, 1698.96, 0.0]
+	FIXING: missing readings from [1392858240, 1007171.803, 0.0, 0.0] to [1392858720, 1007171.803, 0.0, 0.0] a gap of 7
+
+	Save wrangled dataset file: /Users/stephen/Desktop/public/NaturalGas_FRG.csv
+
+	ISSUE TALLIES:
+
+	multiple same unix_ts            =     2
+	avg_rate rounding/mismatch       =     6
+	missing unix_ts                  =   437
+	counter reset                    =     0
+
+
+
+DONE!
+
+
