@@ -78,7 +78,7 @@ for (m, meter_id) in enumerate(meter_ids):
     for line in csvreader:  
         # convert the db dump text date time to a unix UTC int timestamp
         utc_tm = str(line[1])
-        # zero out teh seconds and add UTC timezone
+        # zero out the seconds and add UTC timezone
         utc_tm = utc_tm[:-2] + '00 UTC'
         dt = datetime.strptime(utc_tm, '%Y-%m-%d %H:%M:%S %Z')
         unix_ts = timegm(dt.utctimetuple())
